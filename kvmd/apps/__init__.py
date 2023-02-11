@@ -573,7 +573,7 @@ def _get_config_scheme() -> dict:
         "otgnet": {
             "iface": {
                 "net":    Option("169.254.0.0/28", type=functools.partial(valid_net, v6=False)),
-                "ip_cmd": Option(["/usr/bin/ip"],  type=valid_command),
+                "ip_cmd": Option(["/usr/sbin/ip"],  type=valid_command),
             },
 
             "firewall": {
